@@ -1,6 +1,22 @@
+function getWallet() {
+    var wallet = localStorage.getItem('wallet');
+    if (!wallet) {
+        return {
+            balance: 0,
+            operantions: []
+        }
+    }
+    return JSON.parse(wallet);
+}
+
 function Wallet() {
     var balance = 0;
     var operations = [];
+    function init() {
+        var Wallet = getWallet();
+        balance = wallet.balance;
+        operantions = wallet.operations; 
+    }
     this.addOperation = function() {
 
     }
@@ -16,4 +32,5 @@ function Wallet() {
     this.getOperations = function() {
         return operations;
     }
+    init();
 }
