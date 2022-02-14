@@ -25,7 +25,7 @@ function Wallet() {
     function init() {
         var wallet = getWallet();
         balance = wallet.balance;
-        operations = wallet.operations; 
+        operations = wallet.operations;
     }
     function saveWallet () {
         localStorage.setItem('wallet', JSON.stringify({ balance: balance, operations: operations}));
@@ -52,7 +52,7 @@ function Wallet() {
         var operationIndex;
         for(var i = 0; i < operations.length; i++) {
             if(operations[i].date === id) {
-                operationIndex = i; 
+                operationIndex = i;
                 break;
             }
         }
@@ -65,7 +65,7 @@ function Wallet() {
         }
         else if(operation.type === OpType.OUT) {
             balance += operation.amount;
-        } 
+        }
         operations.splice(operationIndex, 1);
         saveWallet();
     }
