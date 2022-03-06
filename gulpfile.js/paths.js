@@ -28,11 +28,17 @@ module.exports = {
         return paths.global.src + '/' + paths.js.base + '/' + paths.js.entry;
     },
     getJsSrcPath: function(innerPath) {
-        const baseJSPath = paths.global.src + '/' +paths.js.base;
+        const baseJSPath = paths.global.src + '/' + paths.js.base;
         if(innerPath) {
             return baseJSPath + '/' + innerPath;
         }
-        return baseJSbPath;
+        return baseJSPath;
+    },
+    getJSOutputPath: function() {
+        return this.getDistFolder() + '/' + paths.js.dist;
+    },
+    getJSOutputEntry: function(){
+        return paths.js.entry;
     }
 
 }
