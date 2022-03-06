@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp build --dev",
-    "prod": "gulp build --prod"
+    "prod": "gulp build --prod",
+    "prod:debug": "npm run prod -- --debug"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yargs": "^17.3.1"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
