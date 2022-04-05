@@ -19,7 +19,47 @@
 
 
         </header>
-        <main>
+        <main class="container">
+            <!-- Start Search container -->
+            <div class="row d-flex v-bottom">
+                <div class="three columns">
+                    <label for="search-input">Search</label>
+                    <input type="text" class="no-margin" placeholder="Bill" id="search-input"/>
+                </div>                 
+                <div class="two columns">
+                    <button class="no-margin">Search</button>
+                </div>           
+            </div>
+
+            <!-- End Search container -->
+            <div class="row">
+                <div class="twelve columns">
+                    <button class="u-pull-right">New operation</button>
+                </div>
+            </div>
+            <!-- Start Table container -->
+            <div class="row">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th> Description</th>
+                            <th> Amount </th>
+                            <th> Date </th>
+                            <th> Options </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-op-type="expense">
+                            <td>Electricity bill</td>
+                            <td class="operation-amount">200 €</td>
+                            <td>12/10/2020 €</td>
+                            <td><button class="button button-icon icon-delete"></button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Table container -->
 
         </main>
         <footer>
