@@ -3,6 +3,7 @@
         <title>Money tracking app</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- custom:css -->
         <!-- endinject -->
     </head>
@@ -21,18 +22,17 @@
         </header>
         <main class="container">
             <!-- Start Search container -->
-            <div class="row d-flex v-bottom">
-                <div class="three columns">
+            <div class="row">
+                <div class="custom-input-container">
                     <label for="search-input">Search</label>
-                    <input type="text" class="no-margin" placeholder="Bill" id="search-input"/>
-                </div>                 
-                <div class="two columns">
-                    <button class="no-margin">Search</button>
-                </div>           
+                    <input type="text" placeholder="Bill" id="search-input"/>
+                    <button class="button-icon icon-search"></span></button>        
+            </div>                 
+                    
             </div>
 
             <!-- End Search container -->
-            <div class="row">
+            <div class="row mt-2">
                 <div class="twelve columns">
                     <button class="u-pull-right">New operation</button>
                 </div>
@@ -45,7 +45,7 @@
                             <th> Description</th>
                             <th> Amount </th>
                             <th> Date </th>
-                            <th> Options </th>
+                            <th aria-label="Options"> </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +53,7 @@
                             <td>Electricity bill</td>
                             <td class="operation-amount">200 €</td>
                             <td>12/10/2020 €</td>
-                            <td><button class="button button-icon button-animated icon-delete"></button></td>
+                            <td class="align-text-center"><button class="button button-icon button-animated icon-delete"></button></td>
 
                         </tr>
                     </tbody>
