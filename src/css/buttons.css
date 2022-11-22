@@ -12,12 +12,12 @@
     background-size: 30px;
 }
 .button-error {
-    color: red;
-    border-color: red;
+    color: var(--error-color);
+    border-color: var(--error-color);
 }
 .button-success {
-    color: green;
-    border-color: green;
+    color: var(--success-color);
+    border-color: var(--success-color);
 }
 .button-float {
     position: fixed;
@@ -27,5 +27,5 @@
     height: 48px;
     border-radius: 100px;
     padding: 0;
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
 }

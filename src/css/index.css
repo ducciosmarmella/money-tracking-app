@@ -43,5 +43,5 @@ tr[data-op-type="expense"] .operation-amount {
     color: red;
 }
 tr[data-op-type="income"] .operation-amount {
-    color: green;
+    color: var(--success-color);
 }
