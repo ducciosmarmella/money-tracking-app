@@ -22,7 +22,7 @@
 .button-float-container {
     position: fixed;
     text-align: right;
-    bottom: 16px;
+    bottom: 64px;
     padding: 0;
 }
 @media (max-width: 480px) {
